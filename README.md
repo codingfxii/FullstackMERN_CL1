@@ -3,23 +3,23 @@ This project does have Node.js, Express & MongoDB setup.
 
 ## File structure
 
-├───.github
-├───client
-│   ├───public
-│   └───src
-│       ├───actions
-│       ├───api
-│       ├───components
-│       │   ├───Form
-│       │   └───Posts
-│       │       └───Post
-│       ├───constants
-│       ├───images
-│       └───reducers
-└───server
-    ├───controllers
-    ├───models
-    └───routes
+# ├───.github
+# ├───client
+# │   ├───public
+# │   └───src
+# │       ├───actions
+# │       ├───api
+# │       ├───components
+# │       │   ├───Form
+# │       │   └───Posts
+# │       │       └───Post
+# │       ├───constants
+# │       ├───images
+# │       └───reducers
+# └───server
+ #   ├───controllers
+ #   ├───models
+ #   └───routes
 
 
 ## Installation
@@ -110,3 +110,6 @@ Create a .env file in the client folder of your project and add the following va
 
 # Backend API URL
 VITE_API_BASE_URL=<your_backend_url>
+
+
+-suw!
