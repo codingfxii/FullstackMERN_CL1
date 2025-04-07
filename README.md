@@ -27,7 +27,7 @@ This project does have Node.js, Express & MongoDB setup.
 
 ## Clone the repository:
 
-git clone http://172.16.10.188:8888/dushyant/mern-demo-app
+https://github.com/codingfxii/FullstackMERN_CL1
 
 
 
