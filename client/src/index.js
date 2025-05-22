@@ -4,22 +4,22 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
-import { reducers } from './reducers';  // Importing the combined reducers
-import App from './App';  // The main application component
-import './index.css';  // Importing the global CSS file for styling
+import { reducers } from './reducers';  // Importing the combined root reducers
+import App from './App';  // The main component that represents the entire application
+import './index.css';  // Global stylesheet for base styles
 
-// Creating the Redux store with middleware (thunk) for asynchronous actions
+// Initialize the Redux store with middleware to support asynchronous logic (thunk)
 const store = createStore(
-  reducers,  // The root reducer, combining all individual reducers
-  compose(  // Composing the store with applied middleware
-    applyMiddleware(thunk)  // Adding redux-thunk to handle async actions
+  reducers,  // Root reducer made up of combined smaller reducers
+  compose(
+    applyMiddleware(thunk)  // Apply redux-thunk middleware for handling async actions
   )
 );
 
-// Rendering the React app and wrapping it with the Redux Provider to connect the store
+// Mount the React application to the DOM and provide access to the Redux store
 ReactDOM.render(
-  <Provider store={store}>  {/* Provider component passes the store to the entire app */}
-    <App />  {/* The root component of the application */}
+  <Provider store={store}>  {/* Makes the Redux store available throughout the app */}
+    <App />  {/* The primary app component rendered inside the Provider */}
   </Provider>,
-  document.getElementById('root')  // Attaching the app to the DOM element with the id 'root'
+  document.getElementById('root')  // Target DOM node with the id 'root' to render the app into
 );
