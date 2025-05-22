@@ -8,5 +8,5 @@ import posts from './posts';  // Brought in from a local module
 // Each property in the object represents a slice of the application state
 // Here, we're assigning the 'posts' reducer to the 'posts' field of the global state
 export const reducers = combineReducers({
-  posts  // Maps the 'posts' reducer to the 'posts' state field
+  posts  // Maps the 'posts' reducer to the 'posts' state fieldz
 });
