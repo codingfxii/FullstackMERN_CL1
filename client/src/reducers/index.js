@@ -1,12 +1,12 @@
-// Importing the 'combineReducers' function from Redux to combine individual reducers
+// Import the 'combineReducers' utility from Redux to merge multiple reducers into a single root reducer
 import { combineReducers } from 'redux';
 
-// Importing the 'posts' reducer, which handles actions related to posts in the application
-import posts from './posts';  // The posts reducer is imported from the relative path
+// Import the 'posts' reducer, responsible for managing the state related to posts
+import posts from './posts';  // Brought in from a local module
 
-// The 'combineReducers' function takes an object where each key corresponds to a slice of the state
-// Here, we are combining the 'posts' reducer with the overall application state
-// The resulting 'reducers' object can be used to configure the Redux store
+// Combine all reducers into one root reducer using 'combineReducers'
+// Each property in the object represents a slice of the application state
+// Here, we're assigning the 'posts' reducer to the 'posts' field of the global state
 export const reducers = combineReducers({
-  posts  // Associating the 'posts' reducer with the 'posts' key in the state
+  posts  // Maps the 'posts' reducer to the 'posts' state field
 });
